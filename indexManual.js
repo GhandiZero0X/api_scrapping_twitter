@@ -11,11 +11,11 @@ const twitterURLs = [
   // Saham BMRI :
   // "https://x.com/search?q=BMRI%20lang%3Aid%20until%3A2018-12-31%20since%3A2018-01-01&src=typed_query&f=live", // sudah
   // "https://x.com/search?q=BMRI%20lang%3Aid%20until%3A2019-12-31%20since%3A2019-01-01&src=typed_query&f=live", // sudah
-  // "https://x.com/search?q=BMRI%20lang%3Aid%20until%3A2020-12-31%20since%3A2020-01-01&src=typed_query&f=live", // kurang februari dan januari
-  // "https://x.com/search?q=BMRI%20lang%3Aid%20until%3A2021-12-31%20since%3A2021-01-01&src=typed_query&f=live", // baru sampai oktober 19 
-  // "https://x.com/search?q=BMRI%20lang%3Aid%20until%3A2022-12-31%20since%3A2022-01-01&src=typed_query&f=live", // baru sampai desember 7
+  "https://x.com/search?q=BMRI%20lang%3Aid%20until%3A2020-12-31%20since%3A2020-01-01&src=typed_query&f=live", // kurang februari dan januari
+  "https://x.com/search?q=BMRI%20lang%3Aid%20until%3A2021-12-31%20since%3A2021-01-01&src=typed_query&f=live", // baru sampai oktober 19 
+  "https://x.com/search?q=BMRI%20lang%3Aid%20until%3A2022-12-31%20since%3A2022-01-01&src=typed_query&f=live", // baru sampai desember 7
   // "https://x.com/search?q=BMRI%20lang%3Aid%20until%3A2023-12-31%20since%3A2023-01-01&src=typed_query&f=live", // sudah
-  // "https://x.com/search?q=BMRI%20lang%3Aid%20until%3A2024-12-31%20since%3A2024-01-01&src=typed_query&f=live" // baru sampai mei 12
+  "https://x.com/search?q=BMRI%20lang%3Aid%20until%3A2024-12-31%20since%3A2024-01-01&src=typed_query&f=live", // baru sampai mei 12
 
   // Saham INDF :
   "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2018-12-31%20since%3A2018-01-01&src=typed_query&f=top",
@@ -31,11 +31,35 @@ const twitterURLs = [
   "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2023-12-31%20since%3A2023-01-01&src=typed_query",
   "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2023-12-31%20since%3A2023-01-01&src=typed_query&f=live",
   "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2024-12-31%20since%3A2024-01-01&src=typed_query",
-  "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2024-12-31%20since%3A2024-01-01&src=typed_query&f=live"
+  "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2024-12-31%20since%3A2024-01-01&src=typed_query&f=live",
 
   // Saham PANI
+  "https://x.com/search?q=%24PANI%20lang%3Aid%20until%3A2018-12-31%20since%3A2018-01-01&src=typed_query",
+  "https://x.com/search?q=%24PANI%20lang%3Aid%20until%3A2018-12-31%20since%3A2018-01-01&src=typed_query&f=live",
+  "https://x.com/search?q=%24PANI%20lang%3Aid%20until%3A2021-12-31%20since%3A2021-01-01&src=typed_query",
+  "https://x.com/search?q=%24PANI%20lang%3Aid%20until%3A2021-12-31%20since%3A2021-01-01&src=typed_query&f=live",
+  "https://x.com/search?q=%24PANI%20lang%3Aid%20until%3A2022-12-31%20since%3A2022-01-01&src=typed_query",
+  "https://x.com/search?q=%24PANI%20lang%3Aid%20until%3A2022-12-31%20since%3A2022-01-01&src=typed_query&f=live",
+  "https://x.com/search?q=%24PANI%20lang%3Aid%20until%3A2023-12-31%20since%3A2023-01-01&src=typed_query",
+  "https://x.com/search?q=%24PANI%20lang%3Aid%20until%3A2023-12-31%20since%3A2023-01-01&src=typed_query&f=live",
+  "https://x.com/search?q=%24PANI%20lang%3Aid%20until%3A2024-12-31%20since%3A2024-01-01&src=typed_query",
+  "https://x.com/search?q=%24PANI%20lang%3Aid%20until%3A2024-12-31%20since%3A2024-01-01&src=typed_query&f=live",
 
   // Saham ANTM
+  "https://x.com/search?q=%24ANTM%20lang%3Aid%20until%3A2024-12-31%20since%3A2024-01-01&src=typed_query",
+  "https://x.com/search?q=%24ANTM%20lang%3Aid%20until%3A2024-12-31%20since%3A2024-01-01&src=typed_query&f=live",
+  "https://x.com/search?q=%24ANTM%20lang%3Aid%20until%3A2023-12-31%20since%3A2023-01-01&src=typed_query",
+  "https://x.com/search?q=%24ANTM%20lang%3Aid%20until%3A2023-12-31%20since%3A2023-01-01&src=typed_query&f=live",
+  "https://x.com/search?q=%24ANTM%20lang%3Aid%20until%3A2022-12-31%20since%3A2022-01-01&src=typed_query",
+  "https://x.com/search?q=%24ANTM%20lang%3Aid%20until%3A2022-12-31%20since%3A2022-01-01&src=typed_query&f=live",
+  "https://x.com/search?q=%24ANTM%20lang%3Aid%20until%3A2021-12-31%20since%3A2021-01-01&src=typed_query",
+  "https://x.com/search?q=%24ANTM%20lang%3Aid%20until%3A2021-12-31%20since%3A2021-01-01&src=typed_query&f=live",
+  "https://x.com/search?q=%24ANTM%20lang%3Aid%20until%3A2020-12-31%20since%3A2020-01-01&src=typed_query",
+  "https://x.com/search?q=%24ANTM%20lang%3Aid%20until%3A2020-12-31%20since%3A2020-01-01&src=typed_query&f=live",
+  "https://x.com/search?q=%24ANTM%20lang%3Aid%20until%3A2019-12-31%20since%3A2019-01-01&src=typed_query",
+  "https://x.com/search?q=%24ANTM%20lang%3Aid%20until%3A2019-12-31%20since%3A2019-01-01&src=typed_query&f=live",
+  "https://x.com/search?q=%24ANTM%20lang%3Aid%20until%3A2018-12-31%20since%3A2018-01-01&src=typed_query",
+  "https://x.com/search?q=%24ANTM%20lang%3Aid%20until%3A2018-12-31%20since%3A2018-01-01&src=typed_query&f=live",
 
 ];
 
