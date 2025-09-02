@@ -9,26 +9,27 @@ const sentiment = new Sentiment();
 // bisa cari katakunci langsung di twitter pakek tools advance search
 // https://twitter.com/search-advanced
 const twitterURLs = [
-  "https://x.com/search?q=sahamBBCA&src=typed_query&f=top",
-  "https://x.com/search?q=sahamBBCA&src=typed_query&f=live",
-  "https://x.com/search?q=BBCA&src=typed_query&f=top",
-  "https://x.com/search?q=BBCA&src=typed_query&f=live",
-  "https://x.com/search?q=Bank%20Central%20Asia%20tbk&src=typed_query&f=live",
-  "https://x.com/search?q=Bank%20Central%20Asia%20tbk&src=typed_query",
-  "https://x.com/search?q=BBCA%20cuan&src=typed_query&f=top",
-  "https://x.com/search?q=BBCA%20cuan&src=typed_query&f=live",
-  "https://x.com/search?q=BBCA%20turun&src=typed_query&f=live",
-  "https://x.com/search?q=BBCA%20bearish&src=typed_query&f=live",
-  "https://x.com/search?q=BBCA%20untung&src=typed_query&f=live",
-  "https://x.com/search?q=BBCA%20untung&src=typed_query",
-  "https://x.com/search?q=BBCA%20bearish&src=typed_query&f=live",
-  "https://x.com/search?q=BBCA%20profit&src=typed_query&f=top",
-  "https://x.com/search?q=BBCA%20profit&src=typed_query&f=live",
-  "https://x.com/search?q=BBCA%20turun&src=typed_query",
-  "https://x.com/search?q=BBCA%20untung&src=typed_query",
+  // Masukkan Kata Kunci yang Ingin Dicari dengan link search di X (Twitter)
+  // "https://x.com/search?q=sahamBBCA&src=typed_query&f=top",
+  // "https://x.com/search?q=sahamBBCA&src=typed_query&f=live",
+  // "https://x.com/search?q=BBCA&src=typed_query&f=top",
+  // "https://x.com/search?q=BBCA&src=typed_query&f=live",
+  // "https://x.com/search?q=Bank%20Central%20Asia%20tbk&src=typed_query&f=live",
+  // "https://x.com/search?q=Bank%20Central%20Asia%20tbk&src=typed_query",
+  // "https://x.com/search?q=BBCA%20cuan&src=typed_query&f=top",
+  // "https://x.com/search?q=BBCA%20cuan&src=typed_query&f=live",
+  // "https://x.com/search?q=BBCA%20turun&src=typed_query&f=live",
+  // "https://x.com/search?q=BBCA%20bearish&src=typed_query&f=live",
+  // "https://x.com/search?q=BBCA%20untung&src=typed_query&f=live",
+  // "https://x.com/search?q=BBCA%20untung&src=typed_query",
+  // "https://x.com/search?q=BBCA%20bearish&src=typed_query&f=live",
+  // "https://x.com/search?q=BBCA%20profit&src=typed_query&f=top",
+  // "https://x.com/search?q=BBCA%20profit&src=typed_query&f=live",
+  // "https://x.com/search?q=BBCA%20turun&src=typed_query",
+  // "https://x.com/search?q=BBCA%20untung&src=typed_query",
 ];
 
-const SCRAPING_TIME = 15 * 60 * 1000; // 3 menit dalam milidetik
+const SCRAPING_TIME = 120 * 60 * 1000; // berjalan sealama 120 menit
 const cookiesFile = "cookies_twitter.json";
 
 async function loginTwitter(page) {

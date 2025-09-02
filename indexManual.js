@@ -6,6 +6,9 @@ const sentiment = new Sentiment();
 // bisa cari katakunci langsung di twitter pakek tools advance search
 // https://twitter.com/search-advanced
 const twitterURLs = [
+  // Masukkan Kata Kunci yang Ingin Dicari dengan link search di X (Twitter)
+
+  // Saham BMRI :
   // "https://x.com/search?q=BMRI%20lang%3Aid%20until%3A2018-12-31%20since%3A2018-01-01&src=typed_query&f=live", // sudah
   // "https://x.com/search?q=BMRI%20lang%3Aid%20until%3A2019-12-31%20since%3A2019-01-01&src=typed_query&f=live", // sudah
   // "https://x.com/search?q=BMRI%20lang%3Aid%20until%3A2020-12-31%20since%3A2020-01-01&src=typed_query&f=live", // kurang februari dan januari
@@ -13,9 +16,30 @@ const twitterURLs = [
   // "https://x.com/search?q=BMRI%20lang%3Aid%20until%3A2022-12-31%20since%3A2022-01-01&src=typed_query&f=live", // baru sampai desember 7
   // "https://x.com/search?q=BMRI%20lang%3Aid%20until%3A2023-12-31%20since%3A2023-01-01&src=typed_query&f=live", // sudah
   // "https://x.com/search?q=BMRI%20lang%3Aid%20until%3A2024-12-31%20since%3A2024-01-01&src=typed_query&f=live" // baru sampai mei 12
+
+  // Saham INDF :
+  "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2018-12-31%20since%3A2018-01-01&src=typed_query&f=top",
+  "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2018-12-31%20since%3A2018-01-01&src=typed_query&f=live",
+  "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2019-12-31%20since%3A2019-01-01&src=typed_query",
+  "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2019-12-31%20since%3A2019-01-01&src=typed_query&f=live",
+  "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2020-12-31%20since%3A2020-01-01&src=typed_query",
+  "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2020-12-31%20since%3A2020-01-01&src=typed_query&f=live",
+  "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2021-12-31%20since%3A2021-01-01&src=typed_query",
+  "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2021-12-31%20since%3A2021-01-01&src=typed_query&f=live",
+  "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2022-12-31%20since%3A2022-01-01&src=typed_query",
+  "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2022-12-31%20since%3A2022-01-01&src=typed_query&f=live",
+  "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2023-12-31%20since%3A2023-01-01&src=typed_query",
+  "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2023-12-31%20since%3A2023-01-01&src=typed_query&f=live",
+  "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2024-12-31%20since%3A2024-01-01&src=typed_query",
+  "https://x.com/search?q=%23INDF%20lang%3Aid%20until%3A2024-12-31%20since%3A2024-01-01&src=typed_query&f=live"
+
+  // Saham PANI
+
+  // Saham ANTM
+
 ];
 
-const SCRAPING_TIME = 2 * 60 * 60 * 1000; // 2 jam
+const SCRAPING_TIME = 3 * 60 * 60 * 1000; // 3 jam
 
 async function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
